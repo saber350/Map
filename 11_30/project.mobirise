@@ -1,0 +1,260 @@
+{
+  "settings": {
+    "name": "Site-11-30_1451",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#5bf300"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.4.1",
+    "siteFonts": [],
+    "uniqCompNum": 6,
+    "versionPublish": "5.4.1"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "border-radius": "4px",
+              "@media (max-width: 767px)": {
+                "padding": "1rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            }
+          },
+          "_name": "header12",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header12\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ff6666\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"card col-12 col-md-12 col-lg-9\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-box align-center\">\n                        <h1 class=\"card-title mbr-fonts-style mb-3\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>臺中市景點</b></h1>\n                        <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">資料來源:Open Data平台<br>資料日期:2021/11/30</p>\n                        <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-secondary-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now &gt;</a></div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sQec62I1rY",
+          "_anchor": "header12-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".google-map": {
+              "height": "30rem",
+              "position": "relative",
+              "iframe": {
+                "height": "100%",
+                "width": "100%"
+              },
+              "[data-state-details]": {
+                "color": "#6b6763",
+                "height": "1.5em",
+                "margin-top": "-0.75em",
+                "padding-left": "1.25rem",
+                "padding-right": "1.25rem",
+                "position": "absolute",
+                "text-align": "center",
+                "top": "50%",
+                "width": "100%"
+              },
+              "&[data-state]": {
+                "background": "#e9e5dc"
+              },
+              "&[data-state=\"loading\"]": {
+                "[data-state-details]": {
+                  "display": "none"
+                }
+              }
+            }
+          },
+          "_name": "map1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"map1\" group=\"Maps\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"4\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <header>Map</header>\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"<iframe src=&quot;https://www.google.com/maps/d/embed?mid=1cQzNXZXRxpq_YHNSWo_hvY1-7i5zyKhI&quot; width=&quot;640&quot; height=&quot;480&quot;></iframe>\" value=\"<iframe src=&quot;https://www.google.com/maps/d/embed?mid=1cQzNXZXRxpq_YHNSWo_hvY1-7i5zyKhI&quot; width=&quot;640&quot; height=&quot;480&quot;></iframe>\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr-1.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#fff0b0\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#000000\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div class=\"mbr-section-head mb-4\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style align-center mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\">\n                <b>Map</b>\n            </h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                Find us here\n            </h4>\n        </div>\n        <div class=\"google-map\" mbr-map=\"googleMap\">\n        </div>\n    </div>\n</section>",
+          "_cid": "sQefjGPoZP",
+          "_anchor": "map1-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".bg-facebook when (@facebook)": {
+              "background": "#1778f2",
+              "color": "contrast(#1778f2)",
+              "&:hover": {
+                "background": "darken(#1778f2, 10)"
+              }
+            },
+            ".bg-twitter when (@twitter)": {
+              "background": "#1da1f2",
+              "color": "contrast(#1da1f2)",
+              "&:hover": {
+                "background": "darken(#1da1f2, 10)"
+              }
+            },
+            ".bg-pinterest when (@pinterest)": {
+              "background": "#e60023",
+              "color": "contrast(#e60023)",
+              "&:hover": {
+                "background": "darken(#e60023, 10)"
+              }
+            },
+            ".bg-instagram when (@instagram)": {
+              "background": "#f00075",
+              "color": "contrast(#f00075)",
+              "&:hover": {
+                "background": "darken(#f00075, 10)"
+              }
+            },
+            ".bg-slack when (@slack)": {
+              "background": "#4a154b",
+              "color": "contrast(#4a154b)",
+              "&:hover": {
+                "background": "darken(#4a154b, 10)"
+              }
+            },
+            ".bg-linkedin when (@linkedin)": {
+              "background": "#0077b5",
+              "color": "contrast(#0077b5)",
+              "&:hover": {
+                "background": "darken(#0077b5, 10)"
+              }
+            },
+            ".bg-behance when (@behance)": {
+              "background": "#0056ff",
+              "color": "contrast(#0056ff)",
+              "&:hover": {
+                "background": "darken(#0056ff, 10)"
+              }
+            },
+            ".bg-dribbble when (@dribbble)": {
+              "background": "#ea4c89",
+              "color": "contrast(#ea4c89)",
+              "&:hover": {
+                "background": "darken(#ea4c89, 10)"
+              }
+            },
+            ".bg-tiktok when (@tiktok)": {
+              "background": "#000000",
+              "color": "contrast(#000000)",
+              "&:hover": {
+                "background": "darken(#000000, 10)"
+              }
+            },
+            ".bg-youtube when (@youtube)": {
+              "background": "#ff0000",
+              "color": "contrast(#ff0000)",
+              "&:hover": {
+                "background": "darken(#ff0000, 10)"
+              }
+            },
+            ".bg-twitch when (@twitch)": {
+              "background": "#9146ff",
+              "color": "contrast(#9146ff)",
+              "&:hover": {
+                "background": "darken(#9146ff, 10)"
+              }
+            },
+            ".iconfont-wrapper": {
+              "display": "inline-block",
+              "font-size": "32px",
+              "border-radius": "50%",
+              "width": "55px",
+              "height": "55px",
+              "line-height": "55px",
+              "text-align": "center",
+              "transition": "all 0.3s ease-in-out"
+            },
+            "& when (@squareIcons)": {
+              ".iconfont-wrapper": {
+                "border-radius": "0 !important"
+              }
+            },
+            "[class^=\"socicon-\"]:before, [class*=\" socicon-\"]:before": {
+              "line-height": "55px",
+              "padding": ".6rem"
+            }
+          },
+          "_name": "share3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"share3\" group=\"Social\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"Socicon\">\n    \n     <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"5\">\n         <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Square Icons\" name=\"squareIcons\">\n        <input type=\"checkbox\" title=\"Facebook\" name=\"facebook\">\n        <input type=\"checkbox\" title=\"Twitter\" name=\"twitter\">\n        <input type=\"checkbox\" title=\"Instagram\" name=\"instagram\">\n        <input type=\"checkbox\" title=\"Pinterest\" name=\"pinterest\">\n        <input type=\"checkbox\" title=\"Slack\" name=\"slack\">\n        <input type=\"checkbox\" title=\"Linkedin\" name=\"linkedin\">\n        <input type=\"checkbox\" title=\"Behance\" name=\"behance\">\n        <input type=\"checkbox\" title=\"Dribbble\" name=\"dribbble\">\n        <input type=\"checkbox\" title=\"Tiktok\" name=\"tiktok\">\n        <input type=\"checkbox\" title=\"Youtube\" name=\"youtube\">\n        <input type=\"checkbox\" title=\"Twitch\" name=\"twitch\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/mbr.jpg\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    \n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"col-12\">\n                <h3 class=\"mbr-section-title align-center mb-3 mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title, .social-list\"><b>資科四A 410700907 范翔淵</b></h3>\n                <div class=\"social-list align-center\">\n                   \n                    <a class=\"iconfont-wrapper bg-facebook m-2 \" target=\"_blank\" data-app-placeholder=\"Type Text\" href=\"https://mobiri.se\" mbr-if=\"facebook\">\n                            <span mbr-icon class=\"socicon-facebook socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-twitter m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"twitter\">\n                            <span mbr-icon class=\"socicon-twitter socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-instagram m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"instagram\">\n                            <span mbr-icon class=\"socicon-instagram socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-pinterest m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"pinterest\">\n                            <span mbr-icon class=\"socicon-pinterest socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-slack m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"slack\">\n                            <span mbr-icon class=\"socicon-slack socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-linkedin m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"linkedin\">\n                            <span mbr-icon class=\"socicon-linkedin socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-behance m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"behance\">\n                            <span mbr-icon class=\"socicon-behance socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-dribbble m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"dribbble\">\n                            <span mbr-icon class=\"socicon-dribbble socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-tiktok m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"tiktok\">\n                            <span mbr-icon class=\"socicon-tiktok socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-youtube m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"youtube\">\n                            <span mbr-icon class=\"socicon-youtube socicon\"></span>\n                        </a>\n                        <a class=\"iconfont-wrapper bg-twitch m-2\" href=\"https://mobiri.se\" target=\"_blank\" mbr-if=\"twitch\">\n                            <span mbr-icon class=\"socicon-twitch socicon\"></span>\n                        </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sQefMJrClF",
+          "_anchor": "share3-5",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
